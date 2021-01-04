@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context=".activity_apprentissage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Apprentissage"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_choixApprentissage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mot: " />
+
+            <Spinner
+                android:id="@+id/sp_chooseWord"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="info de la base"
+                android:id="@+id/b_base"
+                android:onClick="infoBase" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info sur le mot" />
+
+        <TextView
+            android:id="@+id/tv_listtrad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_listcat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <WebView
+            android:id="@+id/wv_photoweb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </WebView>
+
+        <ImageView
+            android:id="@+id/imgv_photoapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_son"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Son pour la prononcitation:" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="play"
+                android:text="play" />
+
+            <Button
+                android:id="@+id/b_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="pause"
+                android:text="pause" />
+
+            <Button
+                android:id="@+id/b_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="stop"
+                android:text="stop" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

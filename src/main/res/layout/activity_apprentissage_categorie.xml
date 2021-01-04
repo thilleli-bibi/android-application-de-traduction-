@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_apprentissage_categorie"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView_cat1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisir une categorie:" />
+
+        <Spinner
+            android:id="@+id/sp_categorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="valider la catégorie"
+            android:id="@+id/b_valider_cat"
+            android:onClick="validercat" />
+
+        <TextView
+            android:id="@+id/textView_cat2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choisir un mot :" />
+
+        <Spinner
+            android:id="@+id/sp_mot_cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="voir informations"
+            android:id="@+id/b_voir_info"
+            android:onClick="voirinfo" />
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info sur le mot :" />
+
+        <TextView
+            android:id="@+id/trad_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cat_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/img_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <WebView
+            android:id="@+id/photoweb_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+        </WebView>
+
+        <ImageView
+            android:id="@+id/imgv_photoapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Son pour la pronociation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/b_play2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="play"
+                android:text="play" />
+
+            <Button
+                android:id="@+id/b_pause2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="pause"
+                android:text="pause" />
+
+            <Button
+                android:id="@+id/b_stop2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="stop" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

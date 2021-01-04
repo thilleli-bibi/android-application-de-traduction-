@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_choix_apprentissage">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Apprentissage"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voulez-vous apprendre par:" />
+
+    <RadioGroup
+        android:id="@+id/rg_apprendre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/rb_mot"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_mot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mot" />
+
+        <RadioButton
+            android:id="@+id/rb_cat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Catégorie" />
+
+        <RadioButton
+            android:id="@+id/rb_liste"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Liste de mots" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/b_annuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="annuler"
+            android:text="Annuler" />
+
+        <Button
+            android:id="@+id/b_valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="valider"
+            android:text="Valider" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Si vous avez sauvegarder une liste de mots à apprendre, veuillez cliquer sur le bouton ci dessous:" />
+
+    <Button
+        android:id="@+id/b_ifsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ifSave"
+        android:text="Accéder à la page d'apprentissage" />
+
+</LinearLayout>
